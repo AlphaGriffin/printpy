@@ -6,7 +6,7 @@ Subpackages
 
 .. toctree::
 
-    ag.pyproject
+    ag.printing
 
 Module contents
 ---------------

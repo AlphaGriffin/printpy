@@ -65,13 +65,15 @@ python_clean:
 
 
 run:
-	./pyproject
+	./printpy
 
 install:
 	./setup.py install
+	install -pSv printpy /usr/local/bin
 	if [ -d "doc/man" ]; then \
 		install -d /usr/local/share/man/man1; \
-		cp -r doc/man/* /usr/local/share/man/man1; \
+		cp -r doc/man/printing.1 /usr/local/share/man/man1/ag.printing.1; \
+		cp -r doc/man/printing.1 /usr/local/share/man/man1/printpy.1; \
 	fi
 
 

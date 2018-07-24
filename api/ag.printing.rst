@@ -1,10 +1,10 @@
-ag\.pyproject package
+ag\.printing package
 =====================
 
 Module contents
 ---------------
 
-.. automodule:: ag.pyproject
+.. automodule:: ag.printing
     :members:
     :undoc-members:
     :show-inheritance:
