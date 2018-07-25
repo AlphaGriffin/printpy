@@ -62,6 +62,7 @@ python_clean:
 	rm -rf build
 	rm -rf *.egg-info
 	find . -type d -name __pycache__ | xargs -r rm -r
+	find . -type f -name "*.pyc" | xargs -r rm
 
 
 run:
