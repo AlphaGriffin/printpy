@@ -30,7 +30,7 @@ import sphinx_rtd_theme
 sys.path.insert(0, os.path.abspath('../../'))
 
 # get the project details from the setup.py script
-from setup import NS, NAME, DESC, COPY, AUTHOR, findversion
+from setup import NS, NAME, COMMAND, DESC, COPY, AUTHOR, findversion
 
 
 # -- General configuration ------------------------------------------------
@@ -281,8 +281,10 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, NAME, NS + '.' + NAME + ' API Documentation',
-     [author], 1)
+    (master_doc, COMMAND, 'Command for ' + NS + '.' + NAME + ' API',
+     [author], 1),
+    (master_doc, NS + '.' + NAME, 'API Documentation',
+     [author], 3)
 ]
 
 # If true, show URL addresses after external links.
