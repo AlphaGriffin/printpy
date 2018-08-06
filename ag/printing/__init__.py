@@ -75,9 +75,9 @@ class Printer(object):
             self.get_resolution(True)
         # END SETUP
 
-    def __call__(self, msg=None):
+    def __call__(self, msg=None, ret=False, time=False, color='white'):
         if self.working_res:
-            self.printt(msg)
+            self.printt(msg, ret, time, color)
         else:
             print(msg)
 

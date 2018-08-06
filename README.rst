@@ -70,6 +70,8 @@ If you have not installed the project system-wide or you have some changes to tr
 Examples
 --------
 
+A simple Example usage::
+
     from ag.printing import Printer
     Print = Printer()
-    Print('AlphaGriffin | 2018 | alphagriffin.com')
+    Print('AlphaGriffin | 2018 | alphagriffin.com', time=True, color='magenta')
