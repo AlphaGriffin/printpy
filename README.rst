@@ -58,8 +58,8 @@ Using
 -----
 
 If you have already installed the project to the system then it's as simple as::
-    
-    from ag.printing import Printer, Display, Color
+
+    from ag.printing import Printer
 
 If you have not installed the project system-wide or you have some changes to try, you must add the project folder to Python's search path first::
 
@@ -67,5 +67,9 @@ If you have not installed the project system-wide or you have some changes to tr
     sys.path.insert(0, os.path.abspath('/path/to/printpy'))
     from ag.printing import Printer, Display, Color
 
-**FIXME**: usage examples
+Examples
+--------
 
+    from ag.printing import Printer
+    Print = Printer()
+    Print('AlphaGriffin | 2018 | alphagriffin.com')
