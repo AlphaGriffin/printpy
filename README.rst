@@ -2,18 +2,8 @@
 Alpha Griffin Python Printing Utilities
 =======================================
 
-Printing utilities for Python.
-
-.. contents:: Table of Contents
-.. toctree::
-   API Documentation <api/modules>
-
-
-FIXME
------
-
-**FIXME**: Talk about the project here.
-
+This project is meant to streamline colored, timestamped, and screen-size formatted print functions to be way out of current project focus. For use with all projects.
+Second objective is to combine this with curses, for asynchronous line printing.
 
 Build Overview
 --------------
@@ -46,6 +36,10 @@ To clean up all the common generated files from your project folder::
 
 Installing
 ----------
+
+For quick and painless install try::
+
+    python3 -m pip install -U git+https://github.com/alphagriffin/printpy
 
 To install this project to the local system::
 
