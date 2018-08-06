@@ -75,11 +75,21 @@ class Printer(object):
             self.get_resolution(True)
         # END SETUP
 
-    def __call__(self, msg=None, ret=False, time=False, color='white'):
+    def __call__(self, msg=None, ret=False, time=False, color='white', clear=False):
+        # try to clear the screen first:
+        if clear:
+            if 'Windows' in self.platform:
+                os.system('clear')
+            else:
+                os.system('clear') # really??
+
         if self.working_res:
             self.printt(msg, ret, time, color)
         else:
-            print(msg)
+            if msg is None:
+                print()
+            else:
+                print(str(msg))
 
     def printt(self, data=None, ret=False, time=False, color='magenta'):
         if data is None:
