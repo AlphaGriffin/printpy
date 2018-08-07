@@ -7,10 +7,8 @@ Printing utilities for Python.
 .. contents:: Table of Contents
 
 
-FIXME
------
-
-**FIXME**: Talk about the project here.
+This project is meant to streamline colored, timestamped, and screen-size formatted print functions to be way out of current project focus. For use with all projects.
+Second objective is to combine this with curses, for asynchronous line printing.
 
 
 Dependencies
@@ -52,6 +50,10 @@ To clean up all the common generated files from your project folder::
 Installing
 ----------
 
+For quick and painless install try::
+
+    python3 -m pip install -U git+https://github.com/alphagriffin/printpy
+
 To install this project to the local system::
 
     make install
@@ -63,8 +65,8 @@ Using
 -----
 
 If you have already installed the project to the system then it's as simple as::
-    
-    from ag.printing import Printer, Display, Color
+
+    from ag.printing import Printer
 
 If you have not installed the project system-wide or you have some changes to try, you must add the project folder to Python's search path first::
 
@@ -72,7 +74,14 @@ If you have not installed the project system-wide or you have some changes to tr
     sys.path.insert(0, os.path.abspath('/path/to/printpy'))
     from ag.printing import Printer, Display, Color
 
-**FIXME**: usage examples
+Examples
+--------
+
+A simple Example usage::
+
+    from ag.printing import Printer
+    Print = Printer()
+    Print('AlphaGriffin | 2018 | alphagriffin.com', time=True, color='magenta')
 
 
 Python API
