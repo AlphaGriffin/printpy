@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright (C) 2017-2018 Alpha Griffin
 # @%@~LICENSE~@%@
@@ -31,7 +31,6 @@ NAME    = 'printing'                    # should match source package name in NS
 COMMAND = 'printpy'                     # command name may be different than package name
 REQUIRE = [                             # package dependencies
             #'ag.logging',
-            'sphinx_rtd_theme'              # for building documentation
           ]
 
 DESC    = 'Printing utilities for Python'

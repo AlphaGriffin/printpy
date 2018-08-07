@@ -5,14 +5,19 @@ Alpha Griffin Python Printing Utilities
 Printing utilities for Python.
 
 .. contents:: Table of Contents
-.. toctree::
-   API Documentation <api/modules>
 
 
 FIXME
 -----
 
 **FIXME**: Talk about the project here.
+
+
+Dependencies
+~~~~~~~~~~~~
+
+- Python 3
+- *For building documentation (optional):* sphinx and sphinx_rtd_theme (`pip install sphinx sphinx_rtd_theme`)
 
 
 Build Overview
@@ -68,4 +73,11 @@ If you have not installed the project system-wide or you have some changes to tr
     from ag.printing import Printer, Display, Color
 
 **FIXME**: usage examples
+
+
+Python API
+----------
+
+.. toctree::
+   API Documentation <api/modules>
 

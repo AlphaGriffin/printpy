@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Alpha Griffin
+# Copyright (C) 2017-2018 Alpha Griffin
 # @%@~LICENSE~@%@
 #
 # A simple make file for any Python project.
@@ -70,7 +70,7 @@ run:
 
 install:
 	./setup.py install
-	install -pSv printpy /usr/local/bin
+	install -pv printpy /usr/local/bin
 	if [ -d "doc/man" ]; then \
 		install -d /usr/local/share/man/man1; \
 		cp -r doc/man/*.1 /usr/local/share/man/man1/; \
@@ -81,7 +81,7 @@ install:
 
 
 apidoc:
-	sphinx-apidoc ag -o api
+	sphinx-apidoc --module-first ag -o api
 
 apidoc_clean:
 	rm -rf api
