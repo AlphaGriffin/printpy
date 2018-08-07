@@ -5,6 +5,8 @@ Alpha Griffin Python Printing Utilities
 Printing utilities for Python.
 
 .. contents:: Table of Contents
+   :depth: 2
+   :local:
 
 
 
@@ -29,7 +31,7 @@ Dependencies
 ============
 
 - Python 3
-- *For building documentation (optional):* sphinx and sphinx_rtd_theme (`pip install sphinx sphinx_rtd_theme`)
+- *For building documentation (optional):* sphinx and sphinx_rtd_theme (``pip install sphinx sphinx_rtd_theme``)
 
 
 Build Overview

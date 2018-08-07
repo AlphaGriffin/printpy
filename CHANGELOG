@@ -5,7 +5,7 @@ saw_080618_1 - Improved documentation output.
 
 saw_072518_2 - Man pages now install to proper sections: 1 for command, 3 for library.
 
-saw_072518_1 - Update to Makefile: `make clean` now removes *.pyc files.
+saw_072518_1 - Update to Makefile: `make clean` now removes .pyc files.
 
 saw_072418_1 - Initial commit for printpy (nothing yet).
 
