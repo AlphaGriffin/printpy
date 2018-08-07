@@ -1,25 +1,39 @@
-=======================================
+#######################################
 Alpha Griffin Python Printing Utilities
-=======================================
+#######################################
 
 Printing utilities for Python.
 
 .. contents:: Table of Contents
 
 
+
+************
+Introduction
+************
+
 This project is meant to streamline colored, timestamped, and screen-size formatted print functions to be way out of current project focus. For use with all projects.
 Second objective is to combine this with curses, for asynchronous line printing.
 
 
+
+**************
+Python Library
+**************
+
+.. toctree::
+   API Documentation <api/modules>
+
+
 Dependencies
-~~~~~~~~~~~~
+============
 
 - Python 3
 - *For building documentation (optional):* sphinx and sphinx_rtd_theme (`pip install sphinx sphinx_rtd_theme`)
 
 
 Build Overview
---------------
+==============
 
 Both a Makefile and setup.py are provided and used. The setup.py uses Python's standard setuptools package and you can call this script directly to do the basic Python tasks such as creating a wheel, etc.
 
@@ -48,7 +62,7 @@ To clean up all the common generated files from your project folder::
 
 
 Installing
-----------
+==========
 
 For quick and painless install try::
 
@@ -62,7 +76,7 @@ Note that you may need superuser permissions to perform the above step.
 
 
 Using
------
+=====
 
 If you have already installed the project to the system then it's as simple as::
 
@@ -74,8 +88,9 @@ If you have not installed the project system-wide or you have some changes to tr
     sys.path.insert(0, os.path.abspath('/path/to/printpy'))
     from ag.printing import Printer, Display, Color
 
+
 Examples
---------
+========
 
 A simple Example usage::
 
@@ -84,9 +99,12 @@ A simple Example usage::
     Print('AlphaGriffin | 2018 | alphagriffin.com', time=True, color='magenta')
 
 
-Python API
-----------
 
-.. toctree::
-   API Documentation <api/modules>
+*******
+History
+*******
+
+All changes are tracked in the `CHANGELOG <CHANGELOG>`_ file.
+
+.. include:: CHANGELOG
 
