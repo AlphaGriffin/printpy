@@ -5,6 +5,8 @@
 
 Printing utilities for Python.
 
+TODO: https://cito.github.io/blog/f-strings/
+
 .. module:: ag.printing
    :platform: Unix
    :synopsis: Python Starter Project for Alpha Griffin
@@ -72,7 +74,7 @@ class Printer(object):
             self.options.spacer = ' |#|'
             self.options.blocker = '\t'
             self.options.verbose = True
-            self.get_resolution(True)
+            self.get_resolution()
         # END SETUP
 
     def __call__(self, msg=None, ret=False, time=False, color='white', clear=False):
@@ -87,7 +89,8 @@ class Printer(object):
             self.printt(msg, ret, time, color)
         else:
             if msg is None:
-                print()
+                # print()
+                pass  # DOES NOTHING.
             else:
                 print(str(msg))
 
