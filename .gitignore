@@ -1,6 +1,7 @@
 *.swp
 
 .vs/
+.idea/
 
 /build/
 /dist/

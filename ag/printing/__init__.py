@@ -83,16 +83,21 @@ class Printer(object):
             if 'Windows' in self.platform:
                 os.system('clear')
             else:
-                os.system('clear') # really??
+                os.system('clear')  # really??
 
         if self.working_res:
-            self.printt(msg, ret, time, color)
+            msg = self.printt(msg, ret, time, color)
+            if ret:
+                return msg
         else:
             if msg is None:
                 # print()
                 pass  # DOES NOTHING.
             else:
-                print(str(msg))
+                if ret:
+                    return msg
+
+
 
     def printt(self, data=None, ret=False, time=False, color='magenta'):
         if data is None:
@@ -152,7 +157,7 @@ class Printer(object):
             ender = ender
         )
         if ret:
-            return(msg)
+            return msg
         else:
             print(msg)
 
