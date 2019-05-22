@@ -27,7 +27,7 @@ Some of this script logic also taken from:
 #
 
 NS      = 'ag'                          # namespace / meta-package folder
-NAME    = 'printing'                    # should match source package name in NS folder
+NAME    = 'print'                       # should match source package name in NS folder
 COMMAND = 'printpy'                     # command name may be different than package name
 REQUIRE = [                             # package dependencies
             #'ag.logging',
@@ -134,4 +134,3 @@ if __name__ == '__main__':
         entry_points={
         },
     )
-
