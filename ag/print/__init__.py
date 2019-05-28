@@ -7,7 +7,7 @@ Printing utilities for Python.
 
 TODO: https://cito.github.io/blog/f-strings/
 
-.. module:: ag.printing
+.. module:: ag.print
    :platform: Unix
    :synopsis: Python Starter Project for Alpha Griffin
 .. moduleauthor:: Eric Petersen <ruckusist@alphagriffin.com>
